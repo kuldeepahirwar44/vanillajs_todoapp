@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+body {
+  background-color: #04071f;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.heading {
+  margin-block: 6rem 2rem;
+  font-size: 2.5rem;
+  color: #f0f0f0;
+}
+
+/* .todoSectionCon {
+}
+
+.todoCardsCon {
+} */
+
+.todoSectionCon .todoCard {
+  border-radius: 3px;
+  background-color: #f0f0f0;
+  margin-block: 0.5rem;
+  padding: 0.5rem 0.6rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todoSectionCon .todoCard > span {
+  color: #404040;
+}
+
+.todoSectionCon .todoCard > i {
+  color: #ea4545;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.todoSectionCon .todoCard > i:hover {
+  color: #bd3737;
+  transform: scale(1.1);
+}
+
+.todoSectionCon .todoCard > i:active {
+  color: #5a1717;
+  transform: scale(0.9);
+}
+
+.inputTextCon {
+  position: relative;
+}
+
+.inputTextCon > i {
+  position: absolute;
+  left: 91%;
+  top: 25%;
+  color: #404040;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.inputTextCon > i:hover {
+  color: #242424;
+  transform: scale(1.3);
+}
+
+.inputTextCon > i:active {
+  color: #000000;
+  transform: scale(0.9);
+}
+
+input[type="text"]::placeholder {
+  color: #404040;
+}
+
+input[type="text"] {
+  outline: none;
+  border: none;
+  background-color: #f0f0f0;
+  color: #404040;
+  padding: 0.5rem 2.3rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  border-radius: 3px;
+  margin-block-end: 0.5rem;
+}
